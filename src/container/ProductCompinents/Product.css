@@ -1,0 +1,54 @@
+.img-thumb img {
+   width: 100%;
+}
+
+.header {
+   display: flex;
+   justify-content: space-around;
+   width: 250px;
+   background-color: aqua;
+   text-align: center;
+   align-items: center;
+   border-radius: 5px 5px 0 0;
+}
+
+.card {
+   background-color: rgb(155, 152, 152);
+   width: 250px;
+   text-align: center;
+   padding: 10px auto;
+   
+}
+
+.counter input {
+   text-align: center;
+   border: none;
+   font-size: 14px;
+   height: 30px;
+   border-radius: 5px;
+   box-shadow: -1px -1px 1px 1px rgb(99, 104, 99);
+
+}
+
+.counter {
+   margin-top: -10px;
+}
+
+.minus,
+.plus {
+   background-color: rgb(139, 139, 209);
+   color: #fff;
+   font-size: 18px;
+   margin: 5px;
+   padding: 5px;
+   border-radius: 3px;
+}
+
+
+
+
+
+.troley span {
+   color: rgb(20, 20, 20);
+   padding: 2px auto;
+}

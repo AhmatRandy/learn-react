@@ -1,0 +1,59 @@
+.card {
+   display: flex;
+   gap: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.3);
+   box-shadow: 0 0 16px rgba(0, 0, 0, 0.5);
+   padding: 10px;
+   border-radius: 4px;
+   margin-bottom: 20px;
+   margin-left: 20px;
+   width: 800px;
+}
+.section-title{
+   margin-left: 23px;
+   font-size: 20px;
+   font-weight: bold;
+   color: #646161;
+}
+
+.img-wrapper {
+   width: 200px;
+   height: 150px;
+   object-fit: cover;
+}
+
+.desc {
+ 
+   padding: 20px auto;
+}
+
+
+
+.desc-wrapper {
+   font-size: 15px;
+   color: #646161;
+   margin: 0;
+}
+
+.container-blog{
+   max-width: 700px;
+   margin: 20px auto;
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.btn-remove{
+   margin: 7px;
+   border: none;
+   background-color: red;
+   color: #ffff;
+   padding: 5px;
+   cursor: pointer;
+   border-radius: 2px;
+   box-shadow: 2px 2px 2px salmon;
+}
+
+.btn-remove:hover{
+   background-color: #f29393;
+
+}
