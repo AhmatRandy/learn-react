@@ -9,27 +9,33 @@ export default class BlogPost extends Component {
       posts: [],
    };
 
-   handleRemove = (data) => {
-      console.log(data);
-   };
-   componentDidMount() {
-      axios.get('http://localhost:3004/posts').then((result) => {
+   getApi = () => {
+       axios.get('http://localhost:3004/posts').then((result) => {
          this.setState({
             posts: result.data,
          });
       });
    }
 
+   handleRemove = (data) => {
+      axios.delete(`http://localhost:3004/posts/${data}`).then((result) => {
+         this.getApi()
+      })
+   };
+
+   componentDidMount() {
+     this.getApi()
+   }
+
    render() {
       return (
          <div className="container-blog">
-            {/* <p className="section-title">Blog Post</p> */}
+            <p className="section-title">Blog Post</p>
             {this.state.posts.map((post) => {
                return (
                   <Post
                      key={post.id}
-                     title={post.title}
-                     body={post.body}
+                      data={post}
                      remove={this.handleRemove}
                   />
                );

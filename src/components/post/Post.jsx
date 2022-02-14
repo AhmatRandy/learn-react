@@ -11,9 +11,9 @@ const Post = (props) => {
             />
          </div>
          <div className="desc">
-            <p className="title">{props.title}</p>
-            <p className="desc-wrapper">{props.body}</p>
-            <button className="btn-remove" onClick={props.remove}>Remove</button>
+            <p className="title">{props.data.title}</p>
+            <p className="desc-wrapper">{props.data.body}</p>
+            <button className="btn-remove" onClick={() => props.remove(props.data.id)}>Remove</button>
          </div>
       </div>
    );
